@@ -10,19 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_14_212903) do
-
-  create_table "guests", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
-    t.string "diet"
-    t.decimal "salary"
-    t.integer "kids"
-    t.string "vulnerabilities"
-    t.string "illnesses"
-    t.string "medication"
-    t.string "voting"
-  end
+ActiveRecord::Schema.define(version: 2018_08_14_213358) do
 
   create_table "locations", force: :cascade do |t|
     t.integer "house_number"
@@ -38,6 +26,18 @@ ActiveRecord::Schema.define(version: 2018_08_14_212903) do
     t.string "manufacturer"
     t.decimal "cost"
     t.integer "quantity"
+  end
+
+  create_table "widgets", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.string "diet"
+    t.decimal "salary"
+    t.integer "kids"
+    t.string "vulnerabilities"
+    t.string "illnesses"
+    t.string "medication"
+    t.string "voting"
   end
 
 end
